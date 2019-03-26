@@ -1,6 +1,6 @@
 from pyspark import SparkContext
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     sc = SparkContext()
     sc.textFile('book.txt') \
         .flatMap(lambda line: line.split()) \
